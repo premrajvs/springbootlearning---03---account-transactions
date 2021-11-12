@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-CustomerTransactionsApplication<customer-transactions>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.performanceengineering.customertransactions.CustomerTransactionsApplication",
+            "projectName": "customer-transactions",
+            "args": ""
+        }
+    ]
+}

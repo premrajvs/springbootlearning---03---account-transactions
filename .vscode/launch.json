@@ -9,6 +9,16 @@
             "mainClass": "com.performanceengineering.customertransactions.CustomerTransactionsApplication",
             "projectName": "customer-transactions",
             "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-AccountTransactionsApplication<customer-transactions>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.performanceengineering.customertransactions.AccountTransactionsApplication",
+            "projectName": "customer-transactions",
+            "args": ""
         }
     ]
 }

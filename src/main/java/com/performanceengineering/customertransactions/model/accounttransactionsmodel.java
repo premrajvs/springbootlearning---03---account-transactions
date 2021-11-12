@@ -1,10 +1,10 @@
 package com.performanceengineering.customertransactions.model;
 
-public class customertransactionsmodel {
+public class accounttransactionsmodel {
     private String accId;
     private String transactionId;
 
-    public customertransactionsmodel(String accId, String transactionId) {
+    public accounttransactionsmodel(String accId, String transactionId) {
         this.accId = accId;
         this.transactionId = transactionId;
     }

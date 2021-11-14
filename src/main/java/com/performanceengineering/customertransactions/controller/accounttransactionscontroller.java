@@ -1,5 +1,6 @@
 package com.performanceengineering.customertransactions.controller;
 
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
@@ -15,6 +16,8 @@ public class accounttransactionscontroller {
 
     @RequestMapping("/{accId}")
     public List<accounttransactionsmodel> getAccountTransactions(@PathVariable("accId") String accId) {
-        return Collections.singletonList(new accounttransactionsmodel(accId, "tr-001-000-112"));
+        return Arrays.asList(new accounttransactionsmodel(accId, "tr-001-000-111"),
+                new accounttransactionsmodel(accId, "tr-002-000-112"),
+                new accounttransactionsmodel(accId, "tr-003-000-113"));
     }
 }

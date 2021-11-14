@@ -16,8 +16,8 @@ public class accounttransactionscontroller {
 
     @RequestMapping("/{accId}")
     public List<accounttransactionsmodel> getAccountTransactions(@PathVariable("accId") String accId) {
-        return Arrays.asList(new accounttransactionsmodel(accId, "tr-001-000-111"),
-                new accounttransactionsmodel(accId, "tr-002-000-112"),
-                new accounttransactionsmodel(accId, "tr-003-000-113"));
+        return Arrays.asList(new accounttransactionsmodel(accId, "tr-001-000-111", 52, "11-13-2021"),
+                new accounttransactionsmodel(accId, "tr-002-000-112", 27, "11-13-2021"),
+                new accounttransactionsmodel(accId, "tr-003-000-113", 12, "11-13-2021"));
     }
 }

@@ -5,6 +5,7 @@ import java.util.Collections;
 import java.util.List;
 
 import com.performanceengineering.customertransactions.model.accounttransactionsmodel;
+import com.performanceengineering.customertransactions.model.listofaccounttransactionsmodel;
 
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -22,5 +23,18 @@ public class accounttransactionscontroller {
                 new accounttransactionsmodel("2", "tr-001-000-111", 52, "02-02-2021"),
                 new accounttransactionsmodel("2", "tr-002-000-112", 27, "02-02-2021"),
                 new accounttransactionsmodel("2", "tr-003-000-113", 12, "02-02-2021"));
+    }
+
+    @RequestMapping("/obj/{accId}")
+    public listofaccounttransactionsmodel getAccountTransactionsAsObject(@PathVariable("accId") String accId) {
+        listofaccounttransactionsmodel ls = new listofaccounttransactionsmodel();
+        ls.setListofaccounttransactions(
+                Arrays.asList(new accounttransactionsmodel("1", "tr-001-000-111", 52, "11-13-2021"),
+                        new accounttransactionsmodel("1", "tr-002-000-112", 27, "11-13-2021"),
+                        new accounttransactionsmodel("1", "tr-003-000-113", 12, "11-13-2021"),
+                        new accounttransactionsmodel("2", "tr-001-000-111", 52, "02-02-2021"),
+                        new accounttransactionsmodel("2", "tr-002-000-112", 27, "02-02-2021"),
+                        new accounttransactionsmodel("2", "tr-003-000-113", 12, "02-02-2021")));
+        return ls;
     }
 }
